@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Mexico Lindo</title>
-    <link rel="stylesheet" href="styless.css">
     <link rel="shorcut icon" href="./imagenes/LogoChile.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styless.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="navBar">
+                <li>
+                    <img id ="logo" src="./imagenes/LogoChile.jpg" alt="Logo del restaurante México Lindo">
+                </li>
                 <li>
                     <a href="/index.html">Inicio</a>
                 </li>
@@ -25,42 +28,81 @@
                 <li>
                     <a href="./Contacto.html">Contacto</a>
                 </li>
+                <li>
+                    <img class = "iconos" src="./imagenes/Lupa.png" alt="Logo de buscar">
+                </li>
+                <li>
+                    <img class = "iconos" src="./imagenes/Carrito.png" alt="Logo de Carrito">
+                </li>
             </ul>
         </nav>
-        <div>
-            <img src="./imagenes/LogoChile.jpg" alt="Logo del restaurante México Lindo">
-        </div>
+        <style>
+            a:hover{
+                color: green;
+            }
+            .iconos:hover{
+                width: 2rem;
+                height: 2rem;
+            }
+        </style>
     </header>
-    <main>
+    <main class="mainBorde">
         <h1 id="portadaPrincipal">Restaurant México Lindo</h1>
         <section>
             <h2>Nuestros platillos</h2>
-            <div>
-                <h3>Platillo de 3 chalupas poblanas</h2>
-                <img src="./imagenes/chalupas.jpg" alt="Platillo Chalupas">
-                <p>Delicioso platillo de Chalupas poblanas con
-                    salsa verde y roja y carne de res.
-                </p>
-            </div>
-            <div>
-                <h3>Platillo de Mole poblano</h2>
-                <img src="./imagenes/Mole.jpg" alt="Platillo Mole">
-                <p>Platillo de Mole Poblano, el cual
-                    esta acompañado de carne de pollo
-                    o res, y arroz rojo.
-                </p>
-            </div>
-            <div>
-                <h3>Platillo de 3 molotes</h2>
-                <img src="./imagenes/Molotes.jpg" alt="Platillo Molotes">
-                <p>Deliciosos molotes de tinga de pollo
-                    con crema y salsa. Acompañados de lechuga.
-                </p>
+            <div class="vistaGrid">
+                <div>
+                    <h3>Platillo de 3 chalupas poblanas</h3>
+                    <img src="./imagenes/chalupas.jpg" alt="Platillo Chalupas">
+                    <p>Delicioso platillo de Chalupas poblanas con salsa verde y roja y carne de res.</p>
+                </div>
+                <div>
+                    <h3>Platillo de Mole poblano</h3>
+                    <img src="./imagenes/Mole.jpg" alt="Platillo Mole">
+                    <p>Platillo de Mole Poblano, el cual esta acompañado de carne de pollo o res, y arroz rojo. </p>
+                </div>
+                <div>
+                    <h3>Platillo de 3 molotes</h3>
+                    <img src="./imagenes/Molotes.jpg" alt="Platillo Molotes">
+                    <p>Deliciosos molotes de tinga de pollo con crema y salsa. Acompañados de lechuga.</p>
+                </div>
             </div>      
+            <style>
+                h2:hover{
+                    color: red;
+                    font-size: 3rem;
+                }
+
+                .vistaGrid{
+                   /* Hola, tenfo una duda aqui, como le puedo hacer
+                   para que las imagenes esten del mismo tamaño dentro
+                   de mi grid y que el grid no se salga dentro del margen
+                   de mi main */
+                    display:grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 1fr 2fr 1fr;
+                }
+            </style>
         </section>
         <aside>
-           <img src="./imagenes/WhatsApp.png" alt="WhatsApp">
-           <img src="./imagenes/chat.png" alt="Chat"> 
+            <style>
+                .ImagenContacto1{
+                    position: absolute;
+                    right: 30px;
+
+                    width: 4rem;
+                    height: 4rem;
+                }
+                .ImagenContacto2{
+                    position: absolute;
+                    right: 100px;
+
+                    width: 4rem;
+                    height: 4rem;
+                }
+            </style>
+           <img class="ImagenContacto1" src="./imagenes/WhatsApp.png" alt="WhatsApp">
+           <img class="ImagenContacto2" src="./imagenes/chat.png" alt="Chat"> 
         </aside>
     </main>
     <footer>

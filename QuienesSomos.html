@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Quienes somos?</title>
-    <link rel="stylesheet" href="styless.css">
     <link rel="shorcut icon" href="./imagenes/LogoChile.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+    <link rel="stylesheet" href="styless.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="navBar">
+                <li>
+                    <img id ="logo" src="./imagenes/LogoChile.jpg" alt="Logo del restaurante México Lindo">
+                </li>
                 <li>
                     <a href="/index.html">Inicio</a>
                 </li>
@@ -26,13 +28,25 @@
                 <li>
                     <a href="./Contacto.html">Contacto</a>
                 </li>
+                <li>
+                    <img class = "iconos" src="./imagenes/Lupa.png" alt="Logo de buscar">
+                </li>
+                <li>
+                    <img class = "iconos" src="./imagenes/Carrito.png" alt="Logo de Carrito">
+                </li>
             </ul>
         </nav>
-        <div>
-            <img src="./imagenes/LogoChile.jpg" alt="Logo del restaurante México Lindo">
-        </div>
+        <style>
+            a:hover{
+                color: green;
+            }
+            .iconos:hover{
+                width: 2rem;
+                height: 2rem;
+            }
+        </style>
     </header>
-    <main>
+    <main class="mainBorde">
         <h1 class="portada">Quienes Somos</h1>
         <p>Restaurante que surgio por el amor a la comida mexicana. ¿Quieres conocer un poco más sobre la gastronomía mexicana? Te invito a ver el siguiente 
             video
@@ -51,9 +65,25 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1412.5289238661917!2d-98.30967152080662!3d19.063750734616917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc627b2f3ed45%3A0xe59712846c1af63b!2sPlaza%20de%20la%20Concordia!5e0!3m2!1ses-419!2smx!4v1668995124419!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         <aside>
-            <img src="./imagenes/WhatsApp.png" alt="WhatsApp">
-            <img src="./imagenes/chat.png" alt="Chat"> 
-         </aside>
+            <style>
+                .ImagenContacto1{
+                    position: absolute;
+                    right: 30px;
+
+                    width: 4rem;
+                    height: 4rem;
+                }
+                .ImagenContacto2{
+                    position: absolute;
+                    right: 100px;
+
+                    width: 4rem;
+                    height: 4rem;
+                }
+            </style>
+           <img class="ImagenContacto1" src="./imagenes/WhatsApp.png" alt="WhatsApp">
+           <img class="ImagenContacto2" src="./imagenes/chat.png" alt="Chat"> 
+        </aside>
     </main>
     <footer>
         <p>
