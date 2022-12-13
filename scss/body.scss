@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.portadaPrincipal {
+    @include portada(4rem);
+}
+
+.portada {
+    @include portada(3.5rem);
+}
+
+
+h2{
+    @include titulos(2.5rem, center, green);
+}
+
+h3{
+    @include titulos(1.8rem, left, black);
+}
+
+h4{
+    @include titulos(1.5rem, left, black);
+}
+
+#formulario{
+    @extend h3;
+    text-transform: uppercase;
+}
+
+.mainBorde{
+    margin: 10px;
+}
+
+.card-img-top
+{
+    width: 15rem;
+    height: 9.5rem;
+}

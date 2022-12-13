@@ -1,0 +1,36 @@
+/* DISEÑO MOBIL FIST */
+
+/*Hola, tengo una pequeña duda. No se cambia el tamaño de la imagen principal. 
+¿A qué puede deverse?*/
+
+
+/* Diseño para celulares */
+@media only screen and (min-widht: 600px) and (max-width: 99px){
+    .card-img
+    {
+        width: 500px;
+        height: 500px;
+    }
+
+    .card-img-top
+    {
+        width: 15rem;
+        height: 9.5rem;
+    }
+} 
+
+/* Diseño para computadoras */
+@media only screen and (min-widht: 992px) 
+{
+    .card-img
+    {
+        width: 100px;
+        height: 100px;
+    }
+
+    .card-img-top
+{
+    width: 20rem;
+    height: 19.5rem;
+}
+}

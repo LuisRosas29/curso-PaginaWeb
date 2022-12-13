@@ -1,0 +1,14 @@
+@mixin titulos ($tamano, $orientacion, $color){
+    font-family: 'Satisfy', cursive;
+    font-size: $tamano;
+    text-align: $orientacion;
+    color: $color;
+}
+
+@mixin portada ($tamano){
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: $tamano;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
